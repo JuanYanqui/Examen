@@ -29,21 +29,6 @@ public class Principal extends javax.swing.JFrame {
         this.btnCliente = btnCliente;
     }
 
-    public JButton getBtnListarPersonas() {
-        return btnListarPersonas;
-    }
-
-    public void setBtnListarPersonas(JButton btnListarPersonas) {
-        this.btnListarPersonas = btnListarPersonas;
-    }
-
-    public JButton getBtnVentas() {
-        return btnVentas;
-    }
-
-    public void setBtnVentas(JButton btnVentas) {
-        this.btnVentas = btnVentas;
-    }
 
     public JDesktopPane getdPrincipal() {
         return dPrincipal;
@@ -66,11 +51,9 @@ public class Principal extends javax.swing.JFrame {
 
         jToolBar1 = new javax.swing.JToolBar();
         btnCliente = new javax.swing.JButton();
-        btnListarPersonas = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JToolBar.Separator();
         jSeparator2 = new javax.swing.JToolBar.Separator();
         jSeparator3 = new javax.swing.JToolBar.Separator();
-        btnVentas = new javax.swing.JButton();
         dPrincipal = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         mncliente = new javax.swing.JMenu();
@@ -86,21 +69,9 @@ public class Principal extends javax.swing.JFrame {
         btnCliente.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnCliente.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jToolBar1.add(btnCliente);
-
-        btnListarPersonas.setToolTipText("Listar Personas (Alt + L)");
-        btnListarPersonas.setContentAreaFilled(false);
-        btnListarPersonas.setFocusable(false);
-        btnListarPersonas.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnListarPersonas.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToolBar1.add(btnListarPersonas);
         jToolBar1.add(jSeparator1);
         jToolBar1.add(jSeparator2);
         jToolBar1.add(jSeparator3);
-
-        btnVentas.setFocusable(false);
-        btnVentas.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnVentas.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToolBar1.add(btnVentas);
 
         javax.swing.GroupLayout dPrincipalLayout = new javax.swing.GroupLayout(dPrincipal);
         dPrincipal.setLayout(dPrincipalLayout);
@@ -173,8 +144,6 @@ public class Principal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCliente;
-    private javax.swing.JButton btnListarPersonas;
-    private javax.swing.JButton btnVentas;
     private javax.swing.JDesktopPane dPrincipal;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JToolBar.Separator jSeparator1;

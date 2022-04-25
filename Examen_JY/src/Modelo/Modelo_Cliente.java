@@ -90,14 +90,14 @@ public class Modelo_Cliente extends Cliente {
                     + "	cedula, nombres, apellidos, direccion, telefono, correo, fecha_naci, foto)\n"
                     + "	VALUES (?, ?, ?, ?, ?, ?, ?, ?);";
             PreparedStatement ps = cp.getCon().prepareStatement(sql);
-            ps.setString(0, getCedula());
-            ps.setString(1, getNombres());
-            ps.setString(2, getApellidos());
-            ps.setString(3, getDireccion());
-            ps.setString(4, getTelefono());
-            ps.setString(5, getCorreo());
-            ps.setDate(6, (java.sql.Date) getFecha_naci());
-            ps.setBinaryStream(7, getImagen(), getLargo());
+            ps.setString(1, getCedula());
+            ps.setString(2, getNombres());
+            ps.setString(3, getApellidos());
+            ps.setString(4, getDireccion());
+            ps.setString(5, getTelefono());
+            ps.setString(6, getCorreo());
+            ps.setDate(7, (java.sql.Date) getFecha_naci());
+            ps.setBinaryStream(8, getImagen(), getLargo());
             ps.executeUpdate();
             return true;
         } catch (SQLException ex) {
@@ -113,14 +113,14 @@ public class Modelo_Cliente extends Cliente {
                     + "	SET nombres=?, apellidos=?, direccion=?, telefono=?, correo=?, fecha_naci=?, foto=?\n"
                     + "	WHERE cedula='"+getCedula()+"';";
             PreparedStatement ps = cp.getCon().prepareStatement(sql);
-            ps.setString(0, getCedula());
-            ps.setString(1, getNombres());
-            ps.setString(2, getApellidos());
-            ps.setString(3, getDireccion());
-            ps.setString(4, getTelefono());
-            ps.setString(5, getCorreo());
-            ps.setDate(6, (java.sql.Date) getFecha_naci());
-            ps.setBinaryStream(7, getImagen(), getLargo());
+            ps.setString(1, getCedula());
+            ps.setString(2, getNombres());
+            ps.setString(3, getApellidos());
+            ps.setString(4, getDireccion());
+            ps.setString(5, getTelefono());
+            ps.setString(6, getCorreo());
+            ps.setDate(7, (java.sql.Date) getFecha_naci());
+            ps.setBinaryStream(8, getImagen(), getLargo());
             ps.executeUpdate();
             return true;
         } catch (SQLException ex) {
@@ -135,6 +135,10 @@ public class Modelo_Cliente extends Cliente {
         System.out.println("" + sql);
         return cp.accion(sql);
     }
+     public boolean removerPersona(String cel){
+     String nsql="DELETE FROM cliente WHERE cedula ='" +cel+ "'";
+     return cp.accion(nsql);
+     }
      
      
      public List<Cliente> BuscarCliente(String cedula) {
