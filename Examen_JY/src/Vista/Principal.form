@@ -9,11 +9,6 @@
             <Property name="text" type="java.lang.String" value="Clientes"/>
           </Properties>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="mnreportes">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Reportes"/>
-          </Properties>
-        </Menu>
       </SubComponents>
     </Menu>
   </NonVisualComponents>
@@ -41,7 +36,7 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Component id="jToolBar1" pref="795" max="32767" attributes="0"/>
-          <Component id="dtpPrincipal" max="32767" attributes="0"/>
+          <Component id="dPrincipal" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -49,8 +44,7 @@
           <Group type="102" alignment="0" attributes="0">
               <Component id="jToolBar1" min="-2" pref="35" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="dtpPrincipal" max="32767" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <Component id="dPrincipal" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -88,16 +82,6 @@
         </Component>
         <Component class="javax.swing.JToolBar$Separator" name="jSeparator2">
         </Component>
-        <Component class="javax.swing.JButton" name="btnProductos">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="                             "/>
-            <Property name="toolTipText" type="java.lang.String" value="Crear Productos (Ctrl + P)"/>
-            <Property name="contentAreaFilled" type="boolean" value="false"/>
-            <Property name="focusable" type="boolean" value="false"/>
-            <Property name="horizontalTextPosition" type="int" value="0"/>
-            <Property name="verticalTextPosition" type="int" value="3"/>
-          </Properties>
-        </Component>
         <Component class="javax.swing.JToolBar$Separator" name="jSeparator3">
         </Component>
         <Component class="javax.swing.JButton" name="btnVentas">
@@ -109,10 +93,7 @@
         </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JDesktopPane" name="dtpPrincipal">
-      <AuxValues>
-        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
-      </AuxValues>
+    <Container class="javax.swing.JDesktopPane" name="dPrincipal">
 
       <Layout>
         <DimensionLayout dim="0">
@@ -122,7 +103,7 @@
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <EmptySpace min="0" pref="424" max="32767" attributes="0"/>
+              <EmptySpace min="0" pref="435" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
       </Layout>

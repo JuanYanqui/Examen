@@ -5,6 +5,9 @@
  */
 package Vista;
 
+import javax.swing.JButton;
+import javax.swing.JDesktopPane;
+
 /**
  *
  * @author lorena
@@ -18,6 +21,40 @@ public class Principal extends javax.swing.JFrame {
         initComponents();
     }
 
+    public JButton getBtnCliente() {
+        return btnCliente;
+    }
+
+    public void setBtnCliente(JButton btnCliente) {
+        this.btnCliente = btnCliente;
+    }
+
+    public JButton getBtnListarPersonas() {
+        return btnListarPersonas;
+    }
+
+    public void setBtnListarPersonas(JButton btnListarPersonas) {
+        this.btnListarPersonas = btnListarPersonas;
+    }
+
+    public JButton getBtnVentas() {
+        return btnVentas;
+    }
+
+    public void setBtnVentas(JButton btnVentas) {
+        this.btnVentas = btnVentas;
+    }
+
+    public JDesktopPane getdPrincipal() {
+        return dPrincipal;
+    }
+
+    public void setdPrincipal(JDesktopPane dPrincipal) {
+        this.dPrincipal = dPrincipal;
+    }
+
+
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -32,13 +69,11 @@ public class Principal extends javax.swing.JFrame {
         btnListarPersonas = new javax.swing.JButton();
         jSeparator1 = new javax.swing.JToolBar.Separator();
         jSeparator2 = new javax.swing.JToolBar.Separator();
-        btnProductos = new javax.swing.JButton();
         jSeparator3 = new javax.swing.JToolBar.Separator();
         btnVentas = new javax.swing.JButton();
-        dtpPrincipal = new javax.swing.JDesktopPane();
+        dPrincipal = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         mncliente = new javax.swing.JMenu();
-        mnreportes = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -60,14 +95,6 @@ public class Principal extends javax.swing.JFrame {
         jToolBar1.add(btnListarPersonas);
         jToolBar1.add(jSeparator1);
         jToolBar1.add(jSeparator2);
-
-        btnProductos.setText("                             ");
-        btnProductos.setToolTipText("Crear Productos (Ctrl + P)");
-        btnProductos.setContentAreaFilled(false);
-        btnProductos.setFocusable(false);
-        btnProductos.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnProductos.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jToolBar1.add(btnProductos);
         jToolBar1.add(jSeparator3);
 
         btnVentas.setFocusable(false);
@@ -75,22 +102,19 @@ public class Principal extends javax.swing.JFrame {
         btnVentas.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jToolBar1.add(btnVentas);
 
-        javax.swing.GroupLayout dtpPrincipalLayout = new javax.swing.GroupLayout(dtpPrincipal);
-        dtpPrincipal.setLayout(dtpPrincipalLayout);
-        dtpPrincipalLayout.setHorizontalGroup(
-            dtpPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout dPrincipalLayout = new javax.swing.GroupLayout(dPrincipal);
+        dPrincipal.setLayout(dPrincipalLayout);
+        dPrincipalLayout.setHorizontalGroup(
+            dPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
-        dtpPrincipalLayout.setVerticalGroup(
-            dtpPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 424, Short.MAX_VALUE)
+        dPrincipalLayout.setVerticalGroup(
+            dPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 435, Short.MAX_VALUE)
         );
 
         mncliente.setText("Clientes");
         jMenuBar1.add(mncliente);
-
-        mnreportes.setText("Reportes");
-        jMenuBar1.add(mnreportes);
 
         setJMenuBar(jMenuBar1);
 
@@ -99,15 +123,14 @@ public class Principal extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jToolBar1, javax.swing.GroupLayout.DEFAULT_SIZE, 795, Short.MAX_VALUE)
-            .addComponent(dtpPrincipal)
+            .addComponent(dPrincipal)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(dtpPrincipal)
-                .addContainerGap())
+                .addComponent(dPrincipal))
         );
 
         pack();
@@ -151,15 +174,13 @@ public class Principal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCliente;
     private javax.swing.JButton btnListarPersonas;
-    private javax.swing.JButton btnProductos;
     private javax.swing.JButton btnVentas;
-    public static javax.swing.JDesktopPane dtpPrincipal;
+    private javax.swing.JDesktopPane dPrincipal;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JToolBar.Separator jSeparator1;
     private javax.swing.JToolBar.Separator jSeparator2;
     private javax.swing.JToolBar.Separator jSeparator3;
     private javax.swing.JToolBar jToolBar1;
     private javax.swing.JMenu mncliente;
-    private javax.swing.JMenu mnreportes;
     // End of variables declaration//GEN-END:variables
 }
